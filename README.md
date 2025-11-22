@@ -18,18 +18,12 @@ A beautiful, efficient, and interactive terminal-based service manager for Rinit
 
 ## Images 
 
-```
 ![Runit Service Manager 1](images/screenshot1.png)
 
-```
-```
 ![Rinit Service Manager 2 ](images/screenshot2.png)
 
-```
-```
 ![Rinit Service Manager 3 ](images/screenshot3.png)
 
-```
 ## 🏗️ Architecture
 ```
 main.sh (Controller)
@@ -50,17 +44,15 @@ main.sh (Controller)
 
 1. Clone or download the scripts:
 ```
-
-
+#mkdir
 mkdir -p ~/scripts/services/
+
 # Place all script files in this directory
-Make scripts executable:
 
-
+#Make scripts executable:
 chmod +x ~/scripts/services/*.sh
-Run the main script:
 
-
+#Run the main script:
 ~/scripts/services/main.sh
 ```
 
@@ -130,6 +122,7 @@ Shows statistics and counts
 Provides interactive menu
 
 🛡️ Safety Features
+
 ✅ Root privilege prevention
 
 ✅ Sudo password validation

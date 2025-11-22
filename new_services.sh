@@ -175,28 +175,7 @@ print-sum() {
   echo -e "${BLUE}└──────────────────────┴─────────┘${RESET}"
   echo ""
 
-  # echo -e "${MAGENTA}──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────${RESET}"
-  # echo ""
-  # echo -e "${BLUE}Total services: $count_all${RESET}"
-  # echo -e "${GREEN}Enabled: $count_enabled${RESET}"
-  # echo -e "${RED}Disabled: $count_disabled${RESET}"
-  # echo -e "${GREEN}UP: $count_up${RESET}"
-  # echo -e "${RED}shutdown: $count_shutdown${RESET}"
-
   #---------------------------------------------------------------------------------------------------
-
-  #  echo -e "${MAGENTA}──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────${RESET}"
-  #  echo ""
-  #  echo -e "${BLUE}Options: ${RESET}"
-  #  echo ""
-  #  echo "  e = enable service"
-  #  echo "  d = disable service"
-  #  echo "  s = shutdown service"
-  #  echo "  u = start service"
-  #  echo "  r = restart service"
-  #  echo "  q = quit"
-  #  echo ""
-  #  echo -e "${MAGENTA}──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────${RESET}"
 
   echo -e "${MAGENTA}┌──────┬───────────────────────────┐${RESET}"
   echo -e "${MAGENTA}│ ${GREEN}e${RESET}    ${MAGENTA}│${RESET} ${GREEN}enable${RESET} (Enable)           ${MAGENTA}│${RESET}${RESET}"
@@ -210,7 +189,6 @@ print-sum() {
   echo ""
 
   read -n 1 -p " : " option
-
   if [[ "$option" == "e" || "$option" == "d" || "$option" == "s" || "$option" == "u" || "$option" == "r" ]]; then
 
     echo ""
@@ -236,7 +214,6 @@ print-sum() {
 
     if [[ -z "$service" ]]; then
       echo -e "${YELLOW}No service selected, skipping...${RESET}"
-      #      print-sum
       return 1
     fi
 
@@ -261,19 +238,7 @@ print-sum() {
     echo ""
   else
     echo ""
-    echo " Wrong choice"
+    echo -e "${RED} Wrong choice${RESET}"
     echo ""
-    echo -e "${YELLOW}click (Enter) to continue${RESET}"
-    echo ""
-    echo -e "${RED}write (q) to exit${RESET}"
-    echo ""
-    read -n 1 mz
-    if [[ "$mz" == "q" ]]; then
-      clear
-      exit 0
-    fi
   fi
-
-  clear
-
 }

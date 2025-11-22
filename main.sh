@@ -75,3 +75,4 @@ while true; do
   cashe
   print-sum
 done
+clear
