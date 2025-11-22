@@ -16,12 +16,21 @@ A beautiful, efficient, and interactive terminal-based service manager for Rinit
 - 🎯 **Interactive Management** - Fuzzy-finder service selection with `fzf`
 - 🛡️ **Safe Operations** - Root privilege checks and proper cleanup
 
+## Images 
+
+![Runit Service Manager 1](images/screenshot1.png)
+
+![Rinit Service Manager 2 ](images/screenshot1.png)
+
+![Rinit Service Manager 3 ](images/screenshot3.png)
+
 ## 🏗️ Architecture
+```
 main.sh (Controller)
 ├── new_services.sh (UI & Service Management)
 └── hash.sh (Caching System)
 
-text
+```
 
 ## 📦 Dependencies
 
@@ -190,4 +199,9 @@ This is a personal project optimized for:
 🔧 Easy customization
 
 📄 License
-Personal Use - Feel free to adapt for your own needs!
+
+## 📄 License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+![GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)
