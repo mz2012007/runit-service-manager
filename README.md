@@ -18,12 +18,18 @@ A beautiful, efficient, and interactive terminal-based service manager for Rinit
 
 ## Images 
 
+```
 ![Runit Service Manager 1](images/screenshot1.png)
 
-![Rinit Service Manager 2 ](images/screenshot1.png)
+```
+```
+![Rinit Service Manager 2 ](images/screenshot2.png)
 
+```
+```
 ![Rinit Service Manager 3 ](images/screenshot3.png)
 
+```
 ## 🏗️ Architecture
 ```
 main.sh (Controller)

@@ -143,7 +143,7 @@ print-sum() {
 
   # disabled services
   services_kind="disabled services"
-  services_dir="$down_dir"
+  services_dir="$disabled_dir"
   print-head "$RED" "⏸️ "
 
   # up services
